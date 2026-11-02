@@ -35,3 +35,46 @@ a{color:inherit}a:focus-visible{outline:2px solid var(--accent);outline-offset:4
 .report-section p{font-size:13px;line-height:2.15;color:#cad6de;margin:0 0 1.35em}
 .configuration-status{border:1px solid #3e5660;color:var(--accent);font-size:11px;letter-spacing:.19em;padding:16px 20px;max-width:790px;margin:28px auto}
 @media(max-width:740px){.system-log,.observation-report{padding-top:22px}.record-section .reader h2{margin-bottom:39px}.record-section .novel{font-size:15px;line-height:2.25}.log-value{font-size:13px}}
+
+
+/* v0.4.1 readability refinements */
+body{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",system-ui,sans-serif;letter-spacing:.01em}
+.case-main{padding:42px 0 56px}
+.case-sections{max-width:820px}
+.system-log,.observation-report{max-width:820px;background:linear-gradient(180deg,rgba(16,23,33,.82),rgba(12,18,28,.92));border:1px solid rgba(58,78,92,.62);padding:28px clamp(20px,4vw,34px) 34px;border-radius:2px}
+.system-log h2,.observation-report h2{font-size:clamp(22px,2.8vw,34px);font-weight:700;letter-spacing:.015em;line-height:1.35;margin:14px 0 28px}
+.log-id{font-size:13px;color:#eef5f8;letter-spacing:.01em;line-height:1.8}
+.log-label{font-size:11px;color:var(--accent);letter-spacing:.14em;margin-top:22px;font-weight:700}
+.log-value{font-size:17px;line-height:1.95;margin:6px 0 8px;color:#f1f5f7}
+.log-states{border-top:1px solid rgba(104,125,139,.42);border-bottom:1px solid rgba(104,125,139,.42);padding:14px 0;margin-top:24px}
+.log-row{grid-template-columns:1fr auto;gap:16px;padding:9px 0;font-size:15px;color:#d6e0e6;line-height:1.8}
+.log-row span:first-child{font-weight:500}
+.log-row span:last-child{color:var(--accent);font-weight:700}
+.log-ending{font-size:16px;line-height:1.9;margin:22px 0 0;color:#f1f5f7}
+.record-section{margin:36px 0 56px}
+.record-section .reader{background:#101823;border:1px solid rgba(74,95,111,.55);padding:clamp(28px,5vw,54px)}
+.record-section .reader h2{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;font-size:clamp(31px,3.8vw,52px);font-weight:700;letter-spacing:.01em;line-height:1.35;margin:0 0 42px;text-align:left}
+.record-section .novel{max-width:37.5em;font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;font-size:clamp(16px,1.55vw,18px);line-height:2.15;letter-spacing:.01em;color:#f2f5f7}
+.record-section .novel p{margin:0 0 1.28em}
+.novel-break{width:3rem;border:0;border-top:1px solid rgba(118,139,154,.72);margin:2.5em auto}
+.observation-report{padding-top:30px}
+.report-status{font-size:12px;color:#f1f5f7;letter-spacing:.05em;margin-bottom:26px}
+.report-section{border-top:1px solid rgba(104,125,139,.42);padding:18px 0 4px}
+.report-section h3{font-size:15px;letter-spacing:.01em;color:var(--text);font-weight:700;margin:0 0 12px;line-height:1.6}
+.report-section p{font-size:16px;line-height:2;color:#dbe4e9;margin:0 0 1em}
+.action-row{margin-top:30px}
+@media(max-width:740px){
+  .system-log,.observation-report{padding:22px 18px 26px}
+  .system-log h2,.observation-report h2{font-size:27px;margin-bottom:22px}
+  .log-id{font-size:12px}
+  .log-label{font-size:10px}
+  .log-value{font-size:15px;line-height:1.9}
+  .log-row{font-size:14px}
+  .log-ending{font-size:15px}
+  .record-section .reader{padding:24px 18px}
+  .record-section .reader h2{font-size:28px;margin-bottom:28px}
+  .record-section .novel{font-size:16px;line-height:2.05}
+  .record-section .novel p{margin:0 0 1.18em}
+  .report-section h3{font-size:14px}
+  .report-section p{font-size:15px;line-height:1.95}
+}
