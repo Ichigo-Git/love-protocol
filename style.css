@@ -93,15 +93,19 @@ body{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sy
   color:#d8e0e6;
 }
 
-/* v0.4.5 — modern system UI typography for reader only; logs unchanged */
+/* LOVE PROTOCOL / SHARED NOVEL READER
+   Apply the three classes below to each CASE record.
+   LEON v0.4.6 appearance is intentionally retained without changes.
+   System logs and reports use separate selectors above.
+*/
 .record-section{margin:36px 0 62px}
-.record-section .reader{
+.record-section .reader.novel-reader{
   background:transparent;
   border:0;
   padding:20px clamp(0px,3vw,34px) 34px;
   margin:16px 0 0;
 }
-.record-section .reader h2{
+.record-section .novel-reader .novel-reader__title{
   max-width:42em;
   margin:8px auto 46px;
   font-family:system-ui,"Segoe UI","Hiragino Sans","Yu Gothic UI",sans-serif;
@@ -112,7 +116,7 @@ body{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sy
   color:#e7ecef;
   text-align:left;
 }
-.record-section .novel{
+.record-section .novel-reader .novel.novel-reader__body{
   max-width:40em;
   margin:0 auto;
   font-family:system-ui,"Segoe UI","Hiragino Sans","Yu Gothic UI",sans-serif;
@@ -122,18 +126,18 @@ body{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sy
   letter-spacing:0;
   color:#d7dfe5;
 }
-.record-section .novel p{margin:0 0 1.05em}
-.record-section .novel p.dialogue + p.dialogue{margin-top:-.15em}
-.record-section .novel .novel-break{
+.record-section .novel-reader .novel-reader__body p{margin:0 0 1.05em}
+.record-section .novel-reader .novel-reader__body p.dialogue + p.dialogue{margin-top:-.15em}
+.record-section .novel-reader .novel-reader__body .novel-break{
   width:30px;
   border:0;
   border-top:1px solid rgba(135,166,177,.5);
   margin:2.5em auto;
 }
 @media(max-width:740px){
-  .record-section .reader{padding:12px 0 27px}
-  .record-section .reader h2{font-size:23px;margin:8px auto 35px}
-  .record-section .novel{font-size:16px;line-height:1.85;max-width:40em}
-  .record-section .novel p{margin-bottom:1.05em}
-  .record-section .novel .novel-break{margin:2.5em auto}
+  .record-section .reader.novel-reader{padding:12px 0 27px}
+  .record-section .novel-reader .novel-reader__title{font-size:23px;margin:8px auto 35px}
+  .record-section .novel-reader .novel.novel-reader__body{font-size:16px;line-height:1.85;max-width:40em}
+  .record-section .novel-reader .novel-reader__body p{margin-bottom:1.05em}
+  .record-section .novel-reader .novel-reader__body .novel-break{margin:2.5em auto}
 }
