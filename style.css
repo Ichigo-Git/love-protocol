@@ -78,3 +78,62 @@ body{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sy
   .report-section h3{font-size:14px}
   .report-section p{font-size:15px;line-height:1.95}
 }
+
+/* v0.4.3 — novel-only modern and delicate typography */
+.record-section .reader h2{
+  font-family:"Hiragino Sans","Yu Gothic","Noto Sans JP","Yu Gothic UI",sans-serif;
+  font-weight:400;
+  letter-spacing:.065em;
+  color:#e7ecef;
+}
+.record-section .novel{
+  font-family:"Hiragino Sans","Yu Gothic","Noto Sans JP","Yu Gothic UI",sans-serif;
+  font-weight:400;
+  letter-spacing:.03em;
+  color:#d8e0e6;
+}
+
+/* v0.4.4 — unobtrusive reading space; system logs remain unchanged */
+.record-section{margin:36px 0 62px}
+.record-section .reader{
+  background:transparent;
+  border:0;
+  padding:20px clamp(0px,3vw,34px) 34px;
+  margin:16px 0 0;
+}
+.record-section .reader h2{
+  max-width:42em;
+  margin:8px auto 46px;
+  font-family:"Hiragino Sans","Yu Gothic","Noto Sans JP","Yu Gothic UI",sans-serif;
+  font-size:clamp(23px,2.4vw,31px);
+  font-weight:400;
+  line-height:1.5;
+  letter-spacing:.055em;
+  color:#e7ecef;
+  text-align:left;
+}
+.record-section .novel{
+  max-width:40em;
+  margin:0 auto;
+  font-family:"Hiragino Sans","Yu Gothic","Noto Sans JP","Yu Gothic UI",sans-serif;
+  font-weight:400;
+  font-size:clamp(16px,1.55vw,18px);
+  line-height:1.85;
+  letter-spacing:.015em;
+  color:#d7dfe5;
+}
+.record-section .novel p{margin:0 0 1.05em}
+.record-section .novel p.dialogue + p.dialogue{margin-top:-.15em}
+.record-section .novel .novel-break{
+  width:30px;
+  border:0;
+  border-top:1px solid rgba(135,166,177,.5);
+  margin:2.5em auto;
+}
+@media(max-width:740px){
+  .record-section .reader{padding:12px 0 27px}
+  .record-section .reader h2{font-size:23px;margin:8px auto 35px}
+  .record-section .novel{font-size:16px;line-height:1.85;max-width:40em}
+  .record-section .novel p{margin-bottom:1.05em}
+  .record-section .novel .novel-break{margin:2.5em auto}
+}
