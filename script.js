@@ -2,8 +2,11 @@
  const home=document.getElementById('home'),archive=document.getElementById('archive');
  if(home&&archive){
   const show=(isArchive)=>{home.classList.toggle('active',!isArchive);archive.classList.toggle('active',isArchive);const h=document.getElementById(isArchive?'archive-title':'home-title');h.tabIndex=-1;h.focus({preventScroll:true});window.scrollTo(0,0)};
-  document.getElementById('enter')?.addEventListener('click',()=>show(true));
-  document.getElementById('back')?.addEventListener('click',()=>show(false));
+  const syncView=()=>show(window.location.hash==='#archive');
+  document.getElementById('enter')?.addEventListener('click',()=>{window.location.hash='archive';syncView()});
+  document.getElementById('back')?.addEventListener('click',()=>{window.location.hash='home';syncView()});
+  window.addEventListener('hashchange',syncView);
+  syncView();
  }
  const stages=[...document.querySelectorAll('[data-stage]')];
  if(stages.length){
