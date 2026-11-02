@@ -53,8 +53,8 @@ body{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sy
 .log-ending{font-size:16px;line-height:1.9;margin:22px 0 0;color:#f1f5f7}
 .record-section{margin:36px 0 56px}
 .record-section .reader{background:#101823;border:1px solid rgba(74,95,111,.55);padding:clamp(28px,5vw,54px)}
-.record-section .reader h2{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;font-size:clamp(31px,3.8vw,52px);font-weight:700;letter-spacing:.01em;line-height:1.35;margin:0 0 42px;text-align:left}
-.record-section .novel{max-width:37.5em;font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;font-size:clamp(16px,1.55vw,18px);line-height:2.15;letter-spacing:.01em;color:#f2f5f7}
+.record-section .reader h2{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;font-size:clamp(24px,3vw,40px);font-weight:500;letter-spacing:.01em;line-height:1.35;margin:0 0 42px;text-align:left}
+.record-section .novel{max-width:37.5em;font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;font-size:clamp(16px,1.55vw,18px);font-weight:400;line-height:2.15;letter-spacing:.01em;color:#f2f5f7}
 .record-section .novel p{margin:0 0 1.28em}
 .novel-break{width:3rem;border:0;border-top:1px solid rgba(118,139,154,.72);margin:2.5em auto}
 .observation-report{padding-top:30px}
@@ -72,7 +72,7 @@ body{font-family:Inter,"Noto Sans JP","Hiragino Sans","Yu Gothic UI","Meiryo",sy
   .log-row{font-size:14px}
   .log-ending{font-size:15px}
   .record-section .reader{padding:24px 18px}
-  .record-section .reader h2{font-size:28px;margin-bottom:28px}
+  .record-section .reader h2{font-size:22px;margin-bottom:28px}
   .record-section .novel{font-size:16px;line-height:2.05}
   .record-section .novel p{margin:0 0 1.18em}
   .report-section h3{font-size:14px}
